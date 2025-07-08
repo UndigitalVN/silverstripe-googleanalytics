@@ -38,13 +38,14 @@ class ControllerExtension extends Extension {
     public function ShowGoogleAnalytics()
     {
         $config = self::get_analytics_config();
-        if (
-            Director::isLive() &&
-            $config && $config->exists() &&
-            $config->GoogleAnalyticsID &&
-            strpos($_SERVER['REQUEST_URI'], '/admin') === false &&
-            strpos($_SERVER['REQUEST_URI'], '/Security') === false &&
-            strpos($_SERVER['REQUEST_URI'], '/dev') === false) {
+        if (Director::isLive()
+            && $config
+            && $config->exists()
+            && $config->GoogleAnalyticsID
+            && strpos($_SERVER['REQUEST_URI'], '/admin/') !== 0
+            && strpos($_SERVER['REQUEST_URI'], '/Security/') !== 0
+            && strpos($_SERVER['REQUEST_URI'], '/dev/') !== 0
+        ) {
             return true;
         }
         return false;
