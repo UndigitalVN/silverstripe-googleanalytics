@@ -5,9 +5,9 @@ namespace Innoweb\GoogleAnalytics\Extensions;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
-class ConfigExtension extends DataExtension
+class ConfigExtension extends Extension
 {
 
     private static $db = [
