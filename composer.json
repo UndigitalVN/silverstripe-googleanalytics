@@ -1,5 +1,5 @@
 {
-	"name": "innoweb/silverstripe-googleanalytics",
+	"name": "undigitalvn/silverstripe-googleanalytics",
 	"description": "Adds Google Analytics to the site using Gtag or Google Tag Manager.",
 	"type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
@@ -7,14 +7,10 @@
 	"homepage": "http://github.com/xini/silverstripe-googleanalytics",
 	"authors": [
 	{
-		"name": "Florian Thoma",
-		"homepage": "http://www.innoweb.com.au"
+		"name": "Undigital VN",
+		"email": "support@undigital.com.au"
 	}
 	],
-
-	"require": {
-		"silverstripe/framework": "^5"
-	},
     "autoload": {
         "psr-4": {
             "Innoweb\\GoogleAnalytics\\": "src/"
